@@ -15,6 +15,11 @@ pip install -r requirements.txt
 python main.py
 ```
 
+## Runnign the API in dev
+```bash
+uvicorn main:app --reload
+```
+
 The API will be available at `http://localhost:8000`
 
 ## API Documentation
