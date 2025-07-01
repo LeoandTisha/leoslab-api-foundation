@@ -28,6 +28,12 @@ Interactive API documentation is available at:
 - Swagger UI: `http://localhost:8000/docs`
 - ReDoc: `http://localhost:8000/redoc`
 
+## Logging
+Logging is configured to log to a file named `app.log`. You can change the logging level in the `main.py` file. To tail the log file, you can use:
+```bash
+tail -f app.log
+``` 
+
 ## Endpoints
 
 - `GET /` - Welcome message
