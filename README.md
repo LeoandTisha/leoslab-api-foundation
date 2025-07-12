@@ -1,6 +1,22 @@
-# Python API Website
+# LeoLab API Foundation
 
-A simple REST API built with FastAPI for managing items.
+A FastAPI-based foundation for LeoLab infrastructure APIs, originally forked from Clint's excellent Python API Website.
+
+## Attribution
+
+This project is built upon the solid foundation created by **Clint** at [sln-app-dev/python-api-website](https://github.com/sln-app-dev/python-api-website). 
+
+🙏 **Huge thanks to Clint** for:
+- Clean, well-structured FastAPI architecture
+- Excellent async/await patterns with SQLAlchemy
+- Comprehensive logging implementation
+- Solid development patterns and best practices
+
+His original work provides the perfect foundation for building LeoLab's infrastructure management APIs.
+
+## About This Fork
+
+This fork adapts Clint's base architecture to serve as the foundation for LeoLab's infrastructure management APIs, including integrations with Jira, HashiCorp Vault, and infrastructure automation tools.
 
 ## Installation
 
