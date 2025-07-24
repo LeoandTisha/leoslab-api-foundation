@@ -44,7 +44,18 @@ def get_db():
     finally:
         db.close()
 
-app = FastAPI(title="Python API Website", version="1.0.0")
+app = FastAPI(
+    title="LeoLab API Foundation", 
+    version="1.0.0",
+    description="FastAPI foundation for LeoLab infrastructure management with integrated toolkit support"
+)
+
+# Import and include routers
+from routers import vault, jira, infrastructure
+
+app.include_router(vault.router)
+app.include_router(jira.router)  
+app.include_router(infrastructure.router)
 
 @app.on_event("startup")
 async def startup():
